@@ -4,14 +4,6 @@ Prototipo web funcional de una aplicación móvil para agendar citas médicas, b
 
 ---
 
-## 🌐 Ver el prototipo en línea
-
-👉 **[https://danielife05.github.io/Prototipo-Vitus/](https://danielife05.github.io/Prototipo-Vitus/)**
-
-> Funciona en cualquier navegador. En móvil se ve como una app nativa; en escritorio aparece enmarcado como un iPhone.
-
----
-
 ## 📱 Flujo de navegación
 
 ```
@@ -49,8 +41,8 @@ Inicio
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/danielife05/Prototipo-Vitus.git
-cd Prototipo-Vitus/vitus-app
+git clone https://github.com/danielife05/Prototipado-vitus.git
+cd Prototipado-vitus
 
 # 2. Instalar dependencias
 npm install
@@ -59,7 +51,7 @@ npm install
 npm run dev
 ```
 
-Luego abre [http://localhost:5173/Prototipo-Vitus/](http://localhost:5173/Prototipo-Vitus/) en tu navegador.
+Luego abre [http://localhost:5173/](http://localhost:5173/) en tu navegador.
 
 ### Comandos disponibles
 
@@ -87,7 +79,6 @@ Luego abre [http://localhost:5173/Prototipo-Vitus/](http://localhost:5173/Protot
 ## 📂 Estructura del proyecto
 
 ```
-vitus-app/
 ├── src/
 │   ├── context/
 │   │   └── AppContext.jsx     # Estado global (especialidad, médico, turno, cancelación)
@@ -100,8 +91,6 @@ vitus-app/
 │   ├── icons.jsx              # Mapa de íconos por especialidad
 │   ├── App.jsx                # Router principal
 │   └── index.css              # Estilos globales + animaciones
-├── .github/workflows/
-│   └── deploy.yml             # Deploy automático a GitHub Pages
 └── index.html
 ```
 
@@ -112,9 +101,3 @@ vitus-app/
 - **Figma:** [Vitus · Flujo Completo](https://www.figma.com/design/tfQG9JOCSO8fllKJk3ZDoK/Vitus-%C2%B7-Flujo-Completo)
 - Tipografía: **Inter** (Google Fonts)
 - Color primario: `#1a2f4b` (navy) · Acento: `#5c8c6e` (verde)
-
----
-
-## 🚀 Deploy
-
-El proyecto se despliega automáticamente en **GitHub Pages** cada vez que se hace push a la rama `main`, gracias al workflow de GitHub Actions en `.github/workflows/deploy.yml`.
